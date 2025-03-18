@@ -1,0 +1,61 @@
+
+body{
+  background-color: rgb(1, 1, 46);
+}
+
+.teamname{
+  font-size: large;
+}
+.lrcard{
+  margin:2vw 1vw 2vw 1vw ;
+
+
+}
+.card{
+ 
+
+  background-color: white;
+  border-radius: 25px;
+  width:25vw;
+  
+
+
+  margin: 1vw  ;
+
+
+}
+img{
+  border-radius: 15px;
+  /* padding: 1vh; */
+  margin-top:0px; 
+  /* height: 600px;
+  width: 800px; */
+  
+}
+.txt{
+ /* // margin-top:2vw; */
+  padding: 2vh 3vw 0vh 2vw;
+  color:rgb(33, 33, 107);
+}
+.box{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav{
+  height:13vh;
+  width:100vw;
+  background-color: rgb(33, 33, 107);
+}
+ /* .card{
+
+  display:inline-grid;
+  
+
+ 
+  grid-template-columns: auto auto auto;
+  grid-template-rows:20vh 20vh;
+  
+
+} */
