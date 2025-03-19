@@ -10,7 +10,7 @@ const fetchcricketscore = async()=>{
    
     try{
         
-const result = await fetch("https://api.cricapi.com/v1/cricScore?apikey=0e1f8407-f6a6-436a-88e4-4937de0ef02b");
+const result = await fetch("https://api.cricapi.com/v1/cricScore?apikey=7c3e9053-dae4-4000-81dd-fa83e1103076");
 const data = await result.json();
 
 
@@ -46,11 +46,13 @@ console.log(filtereddata);
     return(
         <div className="max-w-screen-x1 min-h-screen">
             
-
+            
 
 <div className="flex items-center justify-center gap-4 pt-5 nav"> 
     
-    <input onChange={(e) =>setSearch(e.target.value)}type="text" className="w-[40%] p-4 border border-indigo-500 outline-none rounded-lg text-white" placeholder="search your team .." />
+<h1 style={{fontFamily:"monospace" ,fontWeight:"bold" , color:"white" , fontSize:"x-large" ,display:"flex" , justifyContent:"flex-start" , alignItems:"flex-start"}}>Live Cricket Matches</h1>
+    
+    <input onChange={(e) =>setSearch(e.target.value)}type="text" className="w-[30%] p-4 border border-indigo-500 outline-none rounded-lg text-white" style={{marginLeft:"35vw"}} placeholder="search your team .." />
 
     <button className="px-6 py-2 rounded-lg border-none outline none bg-blue-700 text-white hover:bg-white hover:text-black duration-300 transition">Search</button>
 
@@ -68,7 +70,7 @@ console.log(filtereddata);
     
     
 
-      
+     
 
        <h2 style={{padding:" 5vh 3vw 1vh 2vw" , fontWeight:"bold"}} >{match.series}</h2>
         <h4 className="txt opacity-70 "> {match.matchType}</h4>
