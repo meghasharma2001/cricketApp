@@ -1,11 +1,15 @@
 import React , {useEffect,useState} from "react";
+import "dotenv";
 import "../App.css";
+
 const Cricketscore = () =>{
     const [res,setResult] = useState([]);
     const[search, setSearch] = useState(''); 
-
+const apikey = import.meta.env.VITE_API_KEY;
 const fetchcricketscore = async()=>{
+   
     try{
+        
 const result = await fetch("https://api.cricapi.com/v1/cricScore?apikey=0e1f8407-f6a6-436a-88e4-4937de0ef02b");
 const data = await result.json();
 
